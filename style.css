@@ -1,0 +1,88 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #fcfcfc; /* Light yellow background */
+}
+
+h1 {
+  font-family: "Arial", sans-serif;
+  color: #fbc02d; /* Dark yellow text */
+  margin-bottom: 20px;
+}
+
+label,
+input,
+button {
+  font-family: "Arial", sans-serif;
+  margin: 5px;
+  padding: 5px;
+}
+
+label {
+  font-size: 1.2em;
+}
+
+input {
+  font-size: 1em;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #fbc02d; /* Dark yellow border */
+}
+
+button {
+  font-size: 1em;
+  padding: 5px 10px;
+  background-color: #fdd835; /* Bright yellow button */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f9a825; /* Darker yellow on hover */
+}
+
+.chessboard {
+  display: grid;
+  margin-top: 20px;
+  gap: 2px;
+}
+
+.chessboard div {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #f57f17; /* Dark yellow border */
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chessboard div.enlarged {
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.black {
+  background-color: #f57f17; /* Dark yellow */
+}
+
+.white {
+  background-color: #fff59d; /* Light yellow */
+}
+
+.queen {    
+  background-image: url("queen yellow.jpeg");
+  background-size: cover;
+}
+
+.traversing {
+  background-image: url("queen.jpg");
+  background-size: cover;
+  opacity: 0.5;
+}
